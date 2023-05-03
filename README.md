@@ -11,3 +11,4 @@ Using python & pygame
 
 ## Examples
 ![example1](./examples/wfc.gif)
+![example2](./examples/circuitboard.png)
