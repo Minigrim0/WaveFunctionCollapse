@@ -8,3 +8,6 @@ Using python & pygame
 
 ## How to run
 1. run `python main.py`
+
+## Examples
+![example1](./examples/wfc.gif)
