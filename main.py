@@ -18,13 +18,10 @@ from constants import (
 tiles = [
     Tile(empty_image, 0, [0, 0, 0, 0])
 ]
-for tile in glob.glob("tiles/5x5/*.png"):
+for tile in glob.glob("tiles/circuitboard/*.png"):
     for rot in range(4):
         tiles.append(Tile(pg.image.load(tile), rot, infer_from_image=True))
 
-# tiles = [
-#     Tile(empty_image, 0, [0, 0, 0, 0]),
-# ]
 # for tile in glob.glob("tiles/9x9/*.png"):
 #     for rot in range(4):
 #         tiles.append(Tile(pg.image.load(tile), rot, infer_from_image=True))
@@ -64,7 +61,7 @@ while True:
         if SHOW_ENTROPY:
             for row in cells:
                 for cell in row:
-                    print(cell, end=" ")
+                    print("%02d" % cell.entropy, end=" ")
                 print()
             print("-" * 20)
 
