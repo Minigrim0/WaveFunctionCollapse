@@ -18,7 +18,7 @@ from constants import (
 tiles = [
     Tile(empty_image, 0, [0, 0, 0, 0])
 ]
-for tile in glob.glob("tiles/circuitboard/*.png"):
+for tile in glob.glob("tiles/smallerboard/*.png"):
     for rot in range(4):
         tiles.append(Tile(pg.image.load(tile), rot, infer_from_image=True))
 
